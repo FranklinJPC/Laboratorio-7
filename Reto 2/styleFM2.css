@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: hsl(0, 0%, 98%);
+    font-family: "Poppins", sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    line-height: 3rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    color: hsl(234, 12%, 34%);
+}
+header h1{
+    font-weight: 900;
+    padding: 10px;
+}
+header h2{
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+header h2 span{
+    font-weight: 200;
+}
+header h2 p{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1.4rem;
+    width: 40%;
+    color: hsl(229, 6%, 66%);
+    line-height: 1.5rem;
+    word-spacing: -1px;
+    font-weight: 400;
+    font-size: 20px;
+    
+}
+.container-card{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 35px;
+    max-width: 70rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3.5rem;
+}
+.card-1,
+.card:nth-child(1),
+.card:nth-child(2),
+.card:nth-child(3){
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 12px 14px -10px hsla(212, 86%, 64%, 0.301);
+}
+.card-infor{
+    padding: 1.7rem 2.5rem;
+}
+.card-infor h2{
+    font-size: 1.2rem;
+    color: hsl(234, 12%, 34%);
+}
+.card-infor p{
+    color: hsl(229, 6%, 66%);
+    font-size: 13px;
+    line-height: 1.5rem;
+    padding-top: 8px;
+}
+.card img{
+    position: static;
+    height: 4rem;
+    margin-left: 73%;
+    margin-top: 3%;
+    width: 4rem;
+}
+.card-1 img{
+    position: static;
+    height: 4rem;
+    margin-left: 73%;
+    margin-top: 3%;
+    width: 4rem;
+}
+.card-infor{
+    padding: 1.7rem 2.3rem;
+}
+.card-1,
+.card:nth-child(1),
+.card:nth-child(2),
+.card:nth-child(3){
+    border-style: solid;
+    border-top-width: 10px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    max-width: 350px;
+    width: 100%;
+    min-height: 15rem;
+    height: 30%;
+}
+.card-1{
+    border-color: hsl(180, 62%, 55%);
+}
+.card:nth-child(1){
+    border-color: red;
+}
+.card:nth-child(2){
+    border-color: orange;
+}
+.card:nth-child(3){
+    border-color: hsl(212, 86%, 64%);
+}
+.card-1,
+.card:nth-child(3),
+.card-centro{
+    place-self: center;
+}
+.card-centro{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+@media only screen and (max-width: 1025px) {
+    .cards-container,
+    .card-centro{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        align-items: center;
+    }   
+}
